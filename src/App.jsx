@@ -1,16 +1,17 @@
 import "./App.css";
-import { Switch } from "./components/ui/switch";
-import { Textarea } from "./components/ui/textarea";
-import { TerminalDemo } from "./components/ui_com/TerminalDemo";
-import { TextAnimation } from "./components/ui_com/TextAnimation";
+import { IconCloudDemo } from "./components/ui_com/IconCloudDemo";
 
 function App() {
   return (
     <>
-      <TerminalDemo />
-      <TextAnimation />
-      <Textarea />
-      <Switch />
+      <IconCloudDemo />
+      <p className="font-OpenSanSemiBold text-2xl text-primary">Hello</p>
+      <p className="font-OpenSanSemiBold text-2xl text-secondary">Hello</p>
+      <p className="font-OpenSanSemiBold text-2xl text-accent_1">Hello</p>
+      <p className="font-OpenSanSemiBold text-2xl text-accent_2">Hello</p>
+      <p className="font-OpenSanSemiBold text-2xl text-accent_3">Hello</p>
+      <p className="font-OpenSanSemiBold text-2xl text-accent_4">Hello</p>
+      <p className="font-OpenSanSemiBold text-2xl text-black_50">Hello</p>
     </>
   );
 }

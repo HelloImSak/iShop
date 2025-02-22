@@ -128,7 +128,37 @@
   * {
     @apply border-border outline-ring/50;
   }
+
   body {
     @apply bg-background text-foreground;
   }
+}
+
+@font-face {
+  font-family: OpenSan;
+  src: url("./fonts/OpenSans-Regular.ttf");
+}
+@font-face {
+  font-family: OpenSanBold;
+  src: url("./fonts/OpenSans-Bold.ttf");
+}
+@font-face {
+  font-family: OpenSanSemiBold;
+  src: url(./fonts/OpenSans-SemiBold.ttf);
+}
+
+@theme {
+  /* fonts */
+  --font-OpenSan: OpenSan, "serif";
+  --font-OpenSanBold: OpenSanBold;
+  --font-OpenSanSemiBold: OpenSanSemiBold;
+
+  /* colors */
+  --color-primary: #0E1F48;
+  --color-secondary: #C96727;
+  --color-accent_1: #FF0800;
+  --color-accent_2: #16A561;
+  --color-accent_3: #B3B3B3;
+  --color-accent_4: #56ABEB;
+  --color-black_50: #51575C;
 }
