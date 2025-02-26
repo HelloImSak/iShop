@@ -7,7 +7,7 @@ export default function ButtonComponent() {
         Button
       </button>
       <button className="border border-secondary text-secondary font-semibold py-2 px-5 rounded-[12px]">
-        Button Outline
+        Button Outline 1
       </button>
 
     </main>
