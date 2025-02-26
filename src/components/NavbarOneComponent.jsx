@@ -1,9 +1,11 @@
 import "flowbite";
 import { useState } from "react";
-import { BsMouse3 } from "react-icons/bs";
+import { BsCart, BsMouse3 } from "react-icons/bs";
 import { CiSpeaker } from "react-icons/ci";
 import { FaRegKeyboard } from "react-icons/fa";
 import { GiHeadphones } from "react-icons/gi";
+import profileImg from "../assets/matra.jpg";
+
 import {
   IoIosArrowDown,
   IoIosArrowForward,
@@ -16,6 +18,8 @@ import logo from "../assets/ishop-dark-logo.png";
 
 const NavbarOneComponent = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const [isLoggedIn, setIsLoggedIn] = useState(false); // Replace with real auth logic
+  const [cartItems, setCartItems] = useState(3); // Replace with real cart data
 
   return (
     <nav className="bg-white/50 backdrop-blur-md fixed top-0 left-0 w-full z-50">
@@ -175,12 +179,33 @@ const NavbarOneComponent = () => {
             </form>
           </div>
           <div>
-            <button
-              type="button"
-              className="py-2 h-[40px] px-8 me-2 text-primary text-caption focus:outline-none bg-white rounded-lg border border-primary hover:bg-primary hover:text-white"
-            >
-              Login
-            </button>
+            {isLoggedIn ? (
+              <div className="flex items-center gap-10">
+                <a href="/cart" className="relative">
+                  <BsCart className="text-primary text-2xl hover:text-secondary" />
+                  {cartItems > 0 && (
+                    <span className="absolute -top-2 -right-2 bg-red-500 text-white text-xs rounded-full px-2">
+                      {cartItems}
+                    </span>
+                  )}
+                </a>
+                <a href="/profile">
+                  <img
+                    src={profileImg}
+                    alt="profile"
+                    className="w-12 h-12 rounded-full border"
+                  />
+                </a>
+              </div>
+            ) : (
+              <button
+                type="button"
+                className="py-2 px-6 text-primary border border-primary rounded-lg hover:bg-primary hover:text-white"
+                onClick={() => setIsLoggedIn(true)}
+              >
+                Login
+              </button>
+            )}
           </div>
         </div>
       </div>
