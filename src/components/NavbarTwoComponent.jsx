@@ -16,6 +16,8 @@ import logo from "../assets/ishop-light-logo.png";
 
 const NavbarTwoComponent = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const [isLoggedIn, setIsLoggedIn] = useState(false); // Replace with real auth logic
+  const [cartItems, setCartItems] = useState(3); // Replace with real cart data
 
   return (
     <nav className="bg-primary backdrop-blur-md fixed top-0 left-0 w-full z-50">
@@ -172,12 +174,33 @@ const NavbarTwoComponent = () => {
             </form>
           </div>
           <div>
-            <button
-              type="button"
-              className="py-2 h-[40px] px-8 me-2 text-primary text-caption focus:outline-none bg-white rounded-lg border "
-            >
-              Login
-            </button>
+            {isLoggedIn ? (
+              <div className="flex items-center gap-10">
+                <a href="/cart" className="relative">
+                  <BsCart className="text-primary text-2xl hover:text-secondary" />
+                  {cartItems > 0 && (
+                    <span className="absolute -top-2 -right-2 bg-red-500 text-white text-xs rounded-full px-2">
+                      {cartItems}
+                    </span>
+                  )}
+                </a>
+                <a href="/profile">
+                  <img
+                    src={profileImg}
+                    alt="profile"
+                    className="w-12 h-12 rounded-full border"
+                  />
+                </a>
+              </div>
+            ) : (
+              <button
+                type="button"
+                className="py-2 px-6 text-primary border border-primary rounded-lg hover:bg-primary hover:text-white"
+                onClick={() => setIsLoggedIn(true)}
+              >
+                Login
+              </button>
+            )}
           </div>
         </div>
       </div>
