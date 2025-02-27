@@ -1,10 +1,9 @@
 import "./App.css";
-import ButtonComponent from "./components/ButtonComponent";
+import NoCart from "./components/NoCart";
 
 function App() {
-  return (
-    <ButtonComponent/>
-  );
+  return;
+  <NoCart />;
 }
 
 export default App;
