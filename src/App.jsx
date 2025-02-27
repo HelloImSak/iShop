@@ -1,8 +1,15 @@
 import "./App.css";
-import Routes from "./routes/routes";
+import NavbarTwoComponent from "./components/NavbarTwoComponent";
+// import Routes from "./routes/routes";
+import NotFoundProduct from "./components/Not-Found-Product";
 
-function App() {
-  return <Routes />;
+// import NotFoundProduct from "./components/Not-Found-Product";
+
+export default function App() {
+  return (
+    <div>
+      <NotFoundProduct />
+      {/* <NavbarTwoComponent /> */}
+    </div>
+  );
 }
-
-export default App;
