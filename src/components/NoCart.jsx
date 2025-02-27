@@ -14,7 +14,7 @@ export default function NoCart() {
           />
         </div>
         <p className="text-lg font-semibold text-gray-800 mt-4">
-          Your cart is Empty 
+          Your cart is Empty
         </p>
         <button className="mt-4 px-6 py-3 border border-orange-400 text-orange-400 rounded-lg hover:bg-orange-100 transition">
           Continue Shopping
