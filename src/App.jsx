@@ -1,10 +1,13 @@
 import "./App.css";
-import ButtonComponent from "./components/ButtonComponent";
+
+import CardComponnets from "./components/CardComponnets";
+import CardDisComponnets from "./components/CardDisComponnets";
 
 function App() {
   return (
-    <ButtonComponent/>
+    <CardDisComponnets/> 
   );
 }
 
 export default App;
+ 
