@@ -8,19 +8,12 @@ export default function NotProductsFound() {
       <header>
         <NavbarTwoComponent />
       </header>
-      {/* <div className="flex flex-col items-center justify-center h-center mt-47">
-        <HiShoppingBag className="w-50 h-50 text-gray-400" />
-        <p className="text-black-300 mt-4 text-lg font-medium">
-          No products were found matching your selection.
-        </p>
-      </div> */}
-      <div className="flex flex-col items-center justify-center min-h-[50vh] px-6 text-center mt-40">
-        <HiShoppingBag className="w-20 h-20 text-gray-400 sm:w-24 sm:h-24 md:w-28 md:h-28" />
+      <div className="flex flex-col items-center justify-center min-h-[50vh] px-6 text-center mt-30">
+        <HiShoppingBag className="w-32 h-32 text-gray-400 sm:w-40 sm:h-40 md:w-48 md:h-48" />
         <p className="text-gray-500 mt-4 text-base sm:text-lg md:text-xl font-medium">
           No products were found matching your selection.
         </p>
       </div>
-
       <footer>
         <FooterComponent />
       </footer>
