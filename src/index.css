@@ -1,4 +1,6 @@
 @import "tailwindcss";
+
+@custom-variant dark (&:is(.dark *));
 @plugin "tailwindcss-animate";
 @import "flowbite/src/themes/default";
 
@@ -120,4 +122,55 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+@font-face {
+  font-family: OpenSan;
+  src: url("./fonts/OpenSans-Regular.ttf");
+}
+@font-face {
+  font-family: OpenSanBold;
+  src: url("./fonts/OpenSans-Bold.ttf");
+}
+@font-face {
+  font-family: OpenSanSemiBold;
+  src: url(./fonts/OpenSans-SemiBold.ttf);
+}
+
+@theme {
+  /* fonts */
+  --font-OpenSan: OpenSan, "serif";
+  --font-OpenSanBold: OpenSanBold;
+  --font-OpenSanSemiBold: OpenSanSemiBold;
+
+  /* colors */
+  --color-primary: #0E1F48;
+  --color-secondary: #C96727;
+  --color-accent_1: #FF0800;
+  --color-accent_2: #16A561;
+  --color-accent_3: #B3B3B3;
+  --color-accent_4: #56ABEB;
+  --color-black_50: #51575C;
+
+  /* font size */
+  --text-h1: 40px;
+  --text-h2: 36px;
+  --text-h3: 32px;
+  --text-h4: 28px;
+  --text-h5: 24px;
+  --text-h6: 20px;
+  --text-body: 16px;
+  --text-caption: 14px;
+  --text-small: 12px;
+  --text-tiny: 10px;
 }

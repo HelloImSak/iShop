@@ -1,16 +1,9 @@
 import "./App.css";
-import { Textarea } from "./components/ui/textarea";
-import { TerminalDemo } from "./components/ui_com/TerminalDemo";
-import { TextAnimation } from "./components/ui_com/TextAnimation";
-
+import NoCart from "./components/NoCart";
 function App() {
-  return (
-    <>
-      <TerminalDemo />
-      <TextAnimation />
-      <Textarea />
-    </>
-  );
+  return
+  <NoCart />;
+
 }
 
 export default App;
