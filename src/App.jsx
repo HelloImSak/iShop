@@ -1,9 +1,10 @@
 import "./App.css";
-import NoCart from "./components/NoCart";
-function App() {
-  return
-  <NoCart />;
 
+function App() {
+  return (
+    // <Error />
+    // <NotProductsFound/>
+  );
 }
 
 export default App;

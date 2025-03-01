@@ -1,3 +1,4 @@
+import "flowbite"
 import { HiShoppingBag } from "react-icons/hi";
 import NavbarTwoComponent from "./NavbarTwoComponent";
 import FooterComponent from "./FooterComponent";
