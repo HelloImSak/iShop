@@ -1,9 +1,9 @@
 import "./App.css";
-import NoCart from "./components/NoCart";
-function App() {
-  return
-  <NoCart />;
+import FilterCom from "./components/Discount/Filtercom";
+import LayoutCardCom from "./components/Discount/LayoutCardCom";
 
+function App() {
+  return <LayoutCardCom/>
 }
 
 export default App;
