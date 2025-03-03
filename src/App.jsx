@@ -1,10 +1,6 @@
-import { Route } from "react-router";
 import "./App.css";
-
 function App() {
-  return(
-
-  )
+  return;
 }
 
 export default App;
