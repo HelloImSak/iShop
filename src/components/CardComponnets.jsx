@@ -3,7 +3,7 @@ import { BsCart3 } from "react-icons/bs";
 
 export default function CardComponnets() {
   return (
-    <main className="flex items-center justify-center h-screen ">
+    <main className="flex items-center justify-center  ">
       <div className="w-[310px] max-w-sm bg-white border border-gray-200 rounded-[25px] shadow-lg p-5">
         <a href="#">
           <img
