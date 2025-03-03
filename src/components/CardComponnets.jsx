@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 import { BsCart3 } from "react-icons/bs";
 
 export default function CardComponnets() {
@@ -20,7 +20,7 @@ export default function CardComponnets() {
               </p>
             </a>
             <button className="bg-secondary text-white p-2 rounded-full">
-            <BsCart3 />
+              <BsCart3 />
             </button>
           </div>
 
@@ -31,5 +31,5 @@ export default function CardComponnets() {
         </div>
       </div>
     </main>
-  )
+  );
 }
